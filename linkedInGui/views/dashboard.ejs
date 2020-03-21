@@ -1,0 +1,78 @@
+<div class="header">
+    <a href="javascript:void(0)" class="logo">LinkedIn Message Agent</a>
+    <div class="header-right">
+        <a href="/logout"><i class="fa fa-sign-out"></i> Logout</a>
+    </div>
+    </div>
+<div class="container-contact100">
+<button class="contact100-btn-show">
+    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+</button>
+<div class="wrap-contact100">
+    <form class="contact100-form validate-form" method="POST" action="javascript:void(0)">
+        <span class="contact100-form-title">
+            Send Message
+        </span>
+        <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="LinkedIn username is required">
+            <span class="label-input100">Username</span>
+            <input class="input100" type="text" name="username" placeholder="Enter LinkedIn username" autocomplete="off">
+            <span class="focus-input100"></span>
+        </div>
+        <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Password is Required">
+            <span class="label-input100">Password</span>
+            <input class="input100" type="password" name="password" placeholder="Enter LinkedIn Password" autocomplete="off">
+            <span class="focus-input100"></span>
+        </div>
+        <div class="wrap-input100 m-1 no-border">
+            <span class="label-input100">Select People to send Message</span>
+        </div>
+        <div class="wrap-input100 rs2-wrap-input100  wrap-custom-radio">
+            <div class="custom-radio">
+                <input type="radio" id="all-connections" checked="checked" value="0" name="selector">
+                <label for="all-connections" title="Send to all Connections">All Connected People</label>
+                <div class="check"><div class="inside">
+                </div></div>
+            </div>
+        </div>
+        <div class="wrap-input100 rs2-wrap-input100  wrap-custom-radio">
+                <div class="custom-radio">
+                    <input type="radio" id="selected-connections" value="1" name="selector">
+                    <label for="selected-connections" title="Add LinkedIn Ids">Add People</label>
+                    <div class="check"><div class="inside">
+                    </div></div>
+                </div>
+        </div>
+        <div class="wrap-input100 rs2-wrap-input100  wrap-custom-radio">
+            
+                <select name="category" id="ceo-connections" class="custom-select">
+                    <option value="" >Open this select menu</option>
+                    <option value="2">President/CEO</option>
+                    <option value="3">Treasure Sales/Business Administration/Executive</option>
+                    <option value="4">HR</option>
+                    <option value="5">Broker</option>
+                </select>
+                <!-- <div class="custom-radio">
+                <input type="radio" id="ceo-connections" value="2" name="selector">
+                <label for="ceo-connections" title="President / CEO / Director / Finance / Manager">President/CEO</label>
+                <div class="check"><div class="inside">
+                </div></div>
+            </div> -->
+        </div>
+        <div class="more-people"></div>
+        <div class="wrap-input100 validate-input" data-validate = "Message is required">
+            <span class="label-input100">Message</span>
+            <textarea class="input100" name="message" placeholder="Your message here..."></textarea>
+            <span class="focus-input100"></span>
+        </div>
+
+        <div class="container-contact100-form-btn">
+            <button type="submit" name="submit" value="submit" class="contact100-form-btn" >
+                <span>
+                    Submit
+                    <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                </span>
+            </button>
+        </div>
+    </form>
+</div>
+</div>

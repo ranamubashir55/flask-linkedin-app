@@ -1,0 +1,15 @@
+<div id="notfound">
+    <div class="notfound">
+        <div class="notfound-404">
+            <div></div>
+            <h1><%= (typeof code != 'undefined')
+        ? code : '404' %></h1>
+        </div>
+        <h2><%= (typeof status != 'undefined')
+        ? status : 'Page not found' %></h2>
+        <p> <%= (typeof msg != 'undefined')
+        ? msg : 'The page you are looking for might have been removed had its name changed or is temporarily unavailable.' %>
+        </p>
+        <a href="/">home page</a>
+    </div>
+</div>
